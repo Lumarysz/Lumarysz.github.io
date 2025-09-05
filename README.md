@@ -1,2 +1,2 @@
 # Lumarysz.github.io
-Este é o site oficial da Next Level Software Studio.
+Este repositório, é a base para o site oficial da Next Level Software Studio.
