@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 40px; /* espaço interno para não encostar na borda */
+            padding: 40px;
             background-color: #f9f9f9;
             color: #222;
             text-align: center;
@@ -17,10 +17,11 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px; /* mais espaço interno dentro do container */
-            background-color: #ffffff; /* opcional para destacar */
-            border-radius: 15px; /* cantos arredondados */
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            word-wrap: break-word; /* garante que textos longos quebrem dentro da caixa */
         }
 
         h1, h2 {
@@ -39,6 +40,7 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             text-decoration: none;
+            word-wrap: break-word; /* evita que o texto do botão quebre fora */
         }
 
         .software-button:hover {
@@ -48,6 +50,7 @@
 
         .links {
             margin-top: 20px;
+            text-align: left; /* links alinhados à esquerda dentro do container */
         }
 
         .links p {
@@ -57,6 +60,7 @@
         .links a {
             color: #0066cc;
             text-decoration: none;
+            word-break: break-all; /* força links longos a quebrar e não sair da caixa */
         }
 
         .links a:hover {
