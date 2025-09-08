@@ -27,7 +27,7 @@
         .button-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             margin: 20px 0;
         }
 
@@ -35,9 +35,10 @@
             background-color: #000;
             color: #fff;
             text-decoration: none;
-            padding: 10px 16px;
+            padding: 15px 20px;
             border-radius: 10px;
             display: inline-block;
+            font-size: 18px;
             transition: background-color 0.3s, transform 0.2s;
         }
 
@@ -48,6 +49,11 @@
 
         h1 {
             margin-top: 0;
+            font-size: 32px;
+        }
+
+        p, .links a {
+            font-size: 18px;
         }
 
         .links a {
@@ -58,6 +64,19 @@
 
         .links a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            .button-list a {
+                font-size: 16px;
+                padding: 12px 16px;
+            }
+            p, .links a {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -86,9 +105,9 @@
         <p>Junte-se à nossa comunidade e acompanhe todas as novidades:</p>
 
         <div class="links">
-            <p>Comunidade no Roblox: <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">Clique aqui</a></p>
+            <p>Comunidade no Roblox: <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about</a></p>
             <p>Estúdio no Scratch: [Link não disponível]</p>
-            <p>Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">Clique aqui</a></p>
+            <p>Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">https://www.roblox.com/pt/users/9306155704/profile</a></p>
         </div>
 
         <!-- Botão de exclusão de dados no final -->
