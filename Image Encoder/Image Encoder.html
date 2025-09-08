@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 40px;
+            padding: 20px;
             background-color: #f9f9f9;
             color: #222;
             text-align: center;
@@ -17,7 +17,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px;
+            padding: 20px;
             background-color: #ffffff;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -27,20 +27,22 @@
         .top-buttons {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-bottom: 20px;
         }
 
         .left-buttons, .right-buttons {
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
 
         .top-buttons a, .top-buttons button {
             background-color: #000000;
             color: #ffffff;
             border: none;
-            padding: 10px 18px;
+            padding: 10px 16px;
             border-radius: 10px;
             font-size: 0.9em;
             cursor: pointer;
@@ -55,16 +57,19 @@
 
         h1 {
             margin-top: 0;
+            font-size: 1.6em;
         }
 
         .table-container {
             max-height: 400px;
             overflow-y: auto;
+            overflow-x: auto; /* rola horizontalmente se precisar */
             margin-top: 20px;
         }
 
         table {
             width: 100%;
+            min-width: 500px; /* garante largura mínima no mobile */
             border-collapse: collapse;
             text-align: center;
             word-wrap: break-word;
@@ -89,11 +94,19 @@
         td a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Agora os botões estão dentro da caixa -->
         <div class="top-buttons">
             <div class="left-buttons">
                 <a href="Image Encoder Docs.html">Documentação</a>
