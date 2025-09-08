@@ -24,84 +24,71 @@
             word-wrap: break-word;
         }
 
-        h1, h2 {
-            margin-top: 20px;
-        }
-
-        .button-section {
+        .button-list {
             display: flex;
             flex-direction: column;
             gap: 10px;
             margin: 20px 0;
         }
 
-        .button-section a, .button-section button {
+        .button-list a {
             background-color: #000;
             color: #fff;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 10px;
-            font-size: 1em;
-            cursor: pointer;
             text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            display: inline-block;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        .button-section a:hover, .button-section button:hover {
+        .button-list a:hover {
             background-color: #333;
             transform: scale(1.05);
         }
 
-        .links {
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        .links p {
-            margin: 12px 0;
-            word-break: break-word;
+        h1 {
+            margin-top: 0;
         }
 
         .links a {
             color: #0066cc;
             text-decoration: none;
+            word-break: break-word;
         }
 
         .links a:hover {
             text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.5em;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Next Level Software Studio</h1>
+
         <p>Bem-vindo ao site oficial da Next Level Software Studio!</p>
 
-        <h2>Conheça os nossos softwares e outros tipos de programas:</h2>
-        <div class="button-section">
-            <a href="Image Encoder/Image Encoder.html">Image Enconder – Codifique as suas imagens. Para fins de programação.</a>
+        <p>Conheça os nossos softwares e outros tipos de programas:</p>
+
+        <div class="button-list">
+            <a href="Image Encoder/Image Enconder.html">Image Enconder – Codifique as suas imagens. Para fins de programação.</a>
             <a href="Installer Maker/Installer Maker.html">Installer Maker – Crie instaladores personalizados.</a>
             <a href="Mouse Tracker/Mouse Tracker.html">Mouse Tracker – Monitore cor dos pixels, e posição do mouse.</a>
-            <a href="Search tool/Search tool.html">Search tool – Encontre informações em segundos.</a>
         </div>
 
-        <h2>Conheça também os nossos jogos publicados no Roblox:</h2>
-        <div class="button-section">
-            <button disabled>Battle of the Chefs – Link não disponível.</button>
+        <p>Conheça também os nossos jogos publicados no Roblox:</p>
+
+        <div class="button-list">
+            <a href="#">Battle of the Chefs – Link não disponível.</a>
         </div>
 
         <h2>Redes sociais e comunidade</h2>
+
         <p>Junte-se à nossa comunidade e acompanhe todas as novidades:</p>
+
         <div class="links">
-            <p>Comunidade no Roblox: <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about</a></p>
-            <p>Estúdio no Scratch: [Link não disponível.]</p>
-            <p>Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">https://www.roblox.com/pt/users/9306155704/profile</a></p>
+            <p>Comunidade no Roblox: <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">Clique aqui</a></p>
+            <p>Estúdio no Scratch: [Link não disponível]</p>
+            <p>Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">Clique aqui</a></p>
         </div>
     </div>
 </body>
