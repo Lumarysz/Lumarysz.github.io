@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 40px;
+            padding: 20px;
             background-color: #f9f9f9;
             color: #222;
             text-align: center;
@@ -17,7 +17,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px;
+            padding: 20px;
             background-color: #ffffff;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -28,22 +28,27 @@
             margin-top: 20px;
         }
 
-        .software-button {
-            display: inline-block;
-            background-color: #000000;
-            color: #ffffff;
+        .software-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .software-buttons a, .software-buttons button {
+            background-color: #000;
+            color: #fff;
             border: none;
             padding: 12px 20px;
-            margin: 10px;
             border-radius: 10px;
             font-size: 1em;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
             text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
-        .software-button:hover {
-            background-color: #333333;
+        .software-buttons a:hover, .software-buttons button:hover {
+            background-color: #333;
             transform: scale(1.05);
         }
 
@@ -54,62 +59,45 @@
 
         .links p {
             margin: 12px 0;
+            word-break: break-word;
         }
 
         .links a {
             color: #0066cc;
             text-decoration: none;
-            word-break: break-all;
         }
 
         .links a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Next Level Software Studio</h1>
-
         <p>Bem-vindo ao site oficial da Next Level Software Studio!</p>
 
-        <h2>Conheça os nossos softwares:</h2>
-        <div>
-            <a href="Image Encoder/Image Encoder.html" class="software-button">
-                Image Enconder – Codifique as suas imagens. Para fins de programação.
-            </a>
-            <a href="Installer Maker/Installer Maker.html" class="software-button">
-                Installer Maker – Crie instaladores personalizados
-            </a>
-            <a href="Mouse Tracker/Mouse Tracker.html" class="software-button">
-                Mouse Tracker – Monitore pixels e posição do mouse
-            </a>
-            <a href="Search tool/Search tool.html" class="software-button">
-                Search tool – Encontre informações em segundos
-            </a>
+        <h2>Conheça os nossos softwares e outros tipos de programas:</h2>
+        <div class="software-buttons">
+            <a href="Image Encoder/Image Encoder.html">Image Enconder – Codifique as suas imagens. Para fins de programação.</a>
+            <a href="Installer Maker/Installer Maker.html">Installer Maker – Crie instaladores personalizados.</a>
+            <a href="Mouse Tracker/Mouse Tracker.html">Mouse Tracker – Monitore cor dos pixels, e posição do mouse.</a>
+            <a href="Search tool/Search tool.html">Search tool – Encontre informações em segundos.</a>
+            <button disabled>Battle of the Chefs – Link não disponível.</button>
         </div>
 
         <h2>Redes sociais e comunidade</h2>
         <p>Junte-se à nossa comunidade e acompanhe todas as novidades:</p>
         <div class="links">
-            <p>
-                Comunidade no Roblox: 
-                <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">
-                    https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about
-                </a>
-            </p>
-
-            <p>
-                Estúdio no Scratch: 
-                <span>[Link não disponível]</span>
-            </p>
-
-            <p>
-                Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: 
-                <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">
-                    https://www.roblox.com/pt/users/9306155704/profile
-                </a>
-            </p>
+            <p>Comunidade no Roblox: <a href="https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about" target="_blank">https://www.roblox.com/pt/communities/969654551/Next-Level-Software-Studio#!/about</a></p>
+            <p>Estúdio no Scratch: [Link não disponível.]</p>
+            <p>Perfil de Lumarysz, Fundador, Dono e um Membro do Conselho de Administração da Next Level Software Studio no Roblox: <a href="https://www.roblox.com/pt/users/9306155704/profile" target="_blank">https://www.roblox.com/pt/users/9306155704/profile</a></p>
         </div>
     </div>
 </body>
