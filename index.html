@@ -23,6 +23,17 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.alpha-warning {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 32px;
     margin-top: 0;
@@ -66,6 +77,10 @@ p {
 }
 
 @media (max-width: 600px) {
+    .alpha-warning {
+        font-size: 16px;
+        padding: 12px;
+    }
     h1 {
         font-size: 24px;
     }
@@ -81,6 +96,10 @@ p {
 </head>
 <body>
 <div class="container">
+    <div class="alpha-warning">
+        ⚠️ Atenção: Este site está em desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
+
     <h1>Next Level Software Studio</h1>
     <p>Bem-vindo ao site oficial da Next Level Software Studio!</p>
     <p>Conheça os nossos softwares e outros tipos de programas:</p>
