@@ -1,141 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Enconder</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #222;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Enconder – Next Level Software Studio</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            word-wrap: break-word;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
 
-        .top-buttons {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
+h1 {
+    font-size: 28px;
+    margin-top: 0;
+}
 
-        .left-buttons, .right-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+.button-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-        .top-buttons a, .top-buttons button {
-            background-color: #000000;
-            color: #ffffff;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 10px;
-            font-size: 0.9em;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+.button-top a, .button-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
-        .top-buttons a:hover, .top-buttons button:hover {
-            background-color: #333333;
-            transform: scale(1.05);
-        }
+.button-top a:hover, .button-list a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
 
-        h1 {
-            margin-top: 0;
-        }
+.button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
 
-        .table-container {
-            max-height: 400px;
-            overflow-y: auto;
-            overflow-x: auto;
-            margin-top: 20px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        table {
-            width: 100%;
-            min-width: 600px;
-            border-collapse: collapse;
-            text-align: center;
-            word-wrap: break-word;
-        }
+table, th, td {
+    border: 1px solid #ccc;
+}
 
-        th, td {
-            border: 1px solid #666;
-            padding: 10px;
-        }
+th, td {
+    padding: 12px;
+    text-align: left;
+}
 
-        th {
-            background-color: #000000;
-            color: #ffffff;
-        }
+th {
+    background-color: #f2f2f2;
+}
 
-        td a {
-            color: #0066cc;
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        td a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.3em;
-            }
-            .container {
-                padding: 15px;
-            }
-        }
-    </style>
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    .button-top a, .button-list a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="top-buttons">
-            <div class="left-buttons">
-                <a href="Image Encoder Docs.html">Documentação</a>
-            </div>
-            <div class="right-buttons">
-                <button onclick="history.back()">Voltar</button>
-                <button onclick="window.location.href='../index.html'">Home</button>
-            </div>
-        </div>
-
-        <h1>Image Enconder</h1>
-
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Versão</th>
-                    <th>Link de download</th>
-                    <th>Requisitos</th>
-                    <th>Feito para</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>1</td>
-                    <td><a href="#"></a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+<div class="container">
+    <div class="button-top">
+        <a href="index.html">Home</a>
+        <a href="javascript:history.back()">Voltar</a>
     </div>
+
+    <h1>Image Enconder</h1>
+
+    <div class="button-list">
+        <a href="Image Encoder/Image Enconder Docs.html">Documentação</a>
+    </div>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Versão</th>
+            <th>Link de download</th>
+            <th>Requisitos</th>
+        </tr>
+        <tr>
+            <td>Image Enconder</td>
+            <td>1</td>
+            <td><a href="#">Link não disponível</a></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
