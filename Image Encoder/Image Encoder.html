@@ -74,21 +74,28 @@ h1 {
     transform: scale(1.05);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.table-container {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    min-width: 70%;
 }
 
 th, td {
     border: 1px solid #000; /* Linhas pretas */
     padding: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #fff; /* Fundo branco */
 }
 
 th {
-    background-color: #fff; /* Fundo branco do cabeçalho */
+    background-color: #fff;
     font-weight: bold;
 }
 
@@ -102,6 +109,9 @@ th {
     }
     th, td {
         padding: 8px;
+    }
+    .table-container {
+        justify-content: flex-start;
     }
 }
 </style>
@@ -119,20 +129,22 @@ th {
         <a href="Image Encoder Docs.html">Documentação</a>
     </div>
 
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>Versão</th>
-            <th>Link de download</th>
-            <th>Requisitos</th>
-        </tr>
-        <tr>
-            <td>Image Enconder</td>
-            <td>1</td>
-            <td><a href="#">Link não disponível</a></td>
-            <td></td>
-        </tr>
-    </table>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Versão</th>
+                <th>Link de download</th>
+                <th>Requisitos</th>
+            </tr>
+            <tr>
+                <td>Image Enconder</td>
+                <td>1</td>
+                <td><a href="#">[Link não disponível.]</a></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
-</html>
+    </html>
