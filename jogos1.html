@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos publicados – Next Level Software Studio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #222;
+      text-align: center;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .alert {
+      font-weight: bold;
+      background-color: yellow;
+      color: #000;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .top-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .top-buttons a {
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .top-buttons a:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    .table-container {
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .button-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-link:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="alert">
+      ⚠️ Atenção: Este site está em fase de desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
+
+    <div class="top-buttons">
+      <a href="jogos.html">Voltar</a>
+      <a href="index.html">Home</a>
+    </div>
+
+    <h1>Jogos publicados na plataforma Roblox</h1>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Nome do Jogo</th>
+          <th>Documentação</th>
+        </tr>
+        <tr>
+          <td><a class="button-link" href="https://www.roblox.com/pt/games/118969998467469/Battle-of-the-Chefs" target="_blank">Battle of the Chefs</a></td>
+          <td><a class="button-link" href="Battle of the Chefs/Battle of the Chefs Docs.html">Documentação</a></td>
+        </tr>
+        <tr>
+          <td><a class="button-link" href="#">Parkour Game</a></td>
+          <td><a class="button-link" href="Parkour Game/Parkour Game.html">Documentação</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
