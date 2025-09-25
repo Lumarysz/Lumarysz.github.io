@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Level Software Studio Calendar & Tasks</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+}
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.alert {
+    font-weight: bold;
+    background-color: yellow;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-buttons a, .top-buttons button {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-buttons a:hover, .top-buttons button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    min-width: 70%;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff;
+}
+
+th {
+    font-weight: bold;
+}
+
+td a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="alert">
+        ⚠️ Atenção: Este site está em fase de desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
+
+    <div class="top-buttons">
+        <button onclick="history.back()">Voltar</button>
+        <button onclick="window.location.href='../index.html'">Home</button>
+    </div>
+
+    <h1>Next Level Software Studio Calendar & Tasks</h1>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Versão</th>
+                <th>Link de download</th>
+                <th>Requisitos</th>
+            </tr>
+            <tr>
+                <td>Next Level Software Studio Calendar & Tasks</td>
+                <td>1</td>
+                <td><a href="#">[Link não disponível]</a></td>
+                <td><a href="Calendar & Tasks/Calendar & Tasks Requisitos.html">Requisitos</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
