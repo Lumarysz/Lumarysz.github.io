@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar & Tasks Requisitos – Next Level Software Studio</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.alert {
+    font-weight: bold;
+    background-color: yellow;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-buttons a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-buttons a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.option-selector {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.option-selector label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.table-container, .list-container {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #fff;
+}
+
+th {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.list-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.list-container li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="alert">
+        ⚠️ Atenção: Este site está em fase de desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
+
+    <div class="top-buttons">
+        <a href="../Calendar & Tasks/Calendar & Tasks.html">Voltar</a>
+        <a href="../index.html">Home</a>
+    </div>
+
+    <div class="option-selector">
+        <label><input type="radio" name="viewOption" value="lista"> Lista</label>
+        <label><input type="radio" name="viewOption" value="tabela" checked> Tabela</label>
+    </div>
+
+    <div class="table-container" id="tableContainer">
+        <table>
+            <tr>
+                <th>Sistema operacional</th>
+                <th>Versão requerida do Next Level Software Studio Setup</th>
+                <th>Armazenamento mínimo disponível</th>
+                <th>RAM mínimo disponível</th>
+            </tr>
+            <tr>
+                <td>Windows 11 Home</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="list-container" id="listContainer" style="display:none;">
+        <ul>
+            <li><strong>Sistema operacional:</strong> Windows 11 Home</li>
+            <li><strong>Versão requerida do Next Level Software Studio Setup:</strong> 1</li>
+            <li><strong>Armazenamento mínimo disponível:</strong> -</li>
+            <li><strong>RAM mínimo disponível:</strong> -</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+const tableContainer = document.getElementById('tableContainer');
+const listContainer = document.getElementById('listContainer');
+const radios = document.querySelectorAll('input[name="viewOption"]');
+
+radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (radio.value === 'tabela') {
+            tableContainer.style.display = 'block';
+            listContainer.style.display = 'none';
+        } else {
+            tableContainer.style.display = 'none';
+            listContainer.style.display = 'block';
+        }
+    });
+});
+</script>
+</body>
+</html>
