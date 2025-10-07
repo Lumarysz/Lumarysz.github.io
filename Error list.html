@@ -3,99 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lista de Erros — Next Level Software Studio</title>
+<title>Lista de Erros – Next Level Software Studio</title>
 <style>
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #222;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+.alert {
+  font-weight: bold;
+  background-color: yellow;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #333;
-    transform: scale(1.05);
+.top-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.top-buttons a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-buttons a:hover {
+  background-color: #333;
+  transform: scale(1.05);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: left;
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
 }
 
 th {
-    background-color: #eee;
+  background-color: #000;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 600px) {
-    button {
-        width: 100%;
-    }
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 </style>
 </head>
 <body>
-
-<div class="container">
-    <h1>Lista de Erros</h1>
-
-    <div>
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="history.back()">Voltar</button>
+  <div class="container">
+    <div class="alert">
+      Atenção: Esta página está em fase de desenvolvimento ALPHA. O conteúdo pode mudar a qualquer momento.
     </div>
 
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Erro</th>
-        </tr>
-        <tr>
-            <td>01</td>
-            <td>ERROR 01 - Idioma não reconhecido, não disponível ou não existente.</td>
-        </tr>
-        <tr>
-            <td>02</td>
-            <td>ERROR 02 - Você não pode acessar este serviço por não ter a idade requerida.</td>
-        </tr>
-        <tr>
-            <td>03</td>
-            <td>ERROR 03 - Você não pode acessar este serviço a partir do seu país.</td>
-        </tr>
-        <tr>
-            <td>04</td>
-            <td>ERROR 04 - Você não está conectado à internet.</td>
-        </tr>
-    </table>
-</div>
+    <div class="top-buttons">
+      <a href="index1.html">Voltar</a>
+      <a href="index.html">Home</a>
+    </div>
 
+    <h1>Lista de Erros – Next Level Software Studio</h1>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Descrição</th>
+        <th>Solução sugerida</th>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>Idioma não reconhecido, não disponível ou não existente.</td>
+        <td>Procure por erros ortográficos, se não houver, tente outro idioma.</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Você não está conectado à internet.</td>
+        <td>Conecte-se à internet.</td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
