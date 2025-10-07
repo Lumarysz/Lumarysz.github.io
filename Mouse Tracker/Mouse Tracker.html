@@ -3,150 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mouse Tracker – Next Level Software Studio</title>
+<title>Next Level Software Studio Mouse Tracker</title>
 <style>
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #222;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .alert {
-  font-weight: bold;
-  background-color: yellow;
-  color: #000;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+    font-weight: bold;
+    background-color: yellow;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .top-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.top-buttons a {
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.2s;
+.top-buttons a, .top-buttons button {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.top-buttons a:hover {
-  background-color: #333;
-  transform: scale(1.05);
+.top-buttons a:hover, .top-buttons button:hover {
+    background-color: #333;
+    transform: scale(1.05);
 }
 
-.software-info {
-  margin-top: 20px;
-  text-align: left;
+h1 {
+    margin-top: 0;
 }
 
-.software-info h2 {
-  margin-bottom: 10px;
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto;
 }
 
-.software-info table {
-  width: 100%;
-  border-collapse: collapse;
+table {
+    border-collapse: collapse;
+    width: auto;
+    min-width: 70%;
 }
 
-.software-info th, .software-info td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: left;
+th, td {
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff;
 }
 
-.software-info th {
-  background-color: #000;
-  color: #fff;
+th {
+    font-weight: bold;
 }
 
-.software-info tr:nth-child(even) {
-  background-color: #f2f2f2;
+td a {
+    text-decoration: none;
+    color: #0066cc;
 }
 
-.software-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.software-links a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #000;
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.software-links a:hover {
-  background-color: #333;
-  transform: scale(1.05);
-}
-
-@media (max-width: 600px) {
-  .software-links a {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
+td a:hover {
+    text-decoration: underline;
 }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="alert">
-    ⚠️ Atenção: Este software está em fase de desenvolvimento ALPHA. Nem todas funcionalidades estão disponíveis. ⚠️
-  </div>
 
-  <div class="top-buttons">
-    <a href="softwares.html">Voltar</a>
-    <a href="index.html">Home</a>
-  </div>
+    <div class="alert">
+        ⚠️ Atenção: Este site está em fase de desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
 
-  <h1>Next Level Software Studio Mouse Tracker</h1>
+    <div class="top-buttons">
+        <button onclick="history.back()">Voltar</button>
+        <button onclick="window.location.href='index.html'">Home</button>
+    </div>
 
-  <div class="software-info">
-    <table>
-      <tr>
-        <th>Versão</th>
-        <th>Requisitos</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="Requisitos/Mouse Tracker Requisitos 1.html">Requisitos versão 1</a></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td><a href="Requisitos/Mouse Tracker Requisitos 2.html">Requisitos versão 2</a></td>
-      </tr>
-    </table>
-  </div>
+    <h1>Next Level Software Studio Calendar & Tasks</h1>
 
-  <div class="software-links">
-    <a href="#">Download (em breve)</a>
-  </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Versão</th>
+                <th>Link de download</th>
+                <th>Requisitos</th>
+            </tr>
+            <tr>
+                <td>Next Level Software Studio Mouse Tracker</td>
+                <td>1</td>
+                <td><a href="#">[Link não disponível]</a></td>
+                <td><a href="Mouse Tracker/Mouse Tracker Requisitos 1.html">Requisitos</a></td>
+            </tr>
+            <tr>
+                <td>Next Level Software Studio Mouse Tracker</td>
+                <td>2</td>
+                <td><a href="#">[Link não disponível]</a></td>
+                <td><a href="Mouse Tracker/Mouse Tracker Requisitos 2.html">Requisitos</a></td>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
 </html>
