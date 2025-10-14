@@ -40,7 +40,11 @@ body {
 }
 
 .button-list a {
-    display: inline-block;
+    display: block;           
+    width: 100%;
+    box-sizing: border-box;   
+    word-break: break-word;   
+    overflow-wrap: break-word; 
     text-decoration: none;
     color: #fff;
     background-color: #000;
@@ -49,6 +53,7 @@ body {
     font-size: 18px;
     transition: background-color 0.3s, transform 0.2s;
 }
+
 
 .button-list a:hover {
     background-color: #333;
