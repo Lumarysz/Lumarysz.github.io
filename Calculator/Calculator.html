@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLSS Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #222;
+            text-align: center;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            word-wrap: break-word;
+        }
+
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .left-buttons, .right-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .top-buttons a, .top-buttons button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .top-buttons a:hover, .top-buttons button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+            text-align: center;
+            word-wrap: break-word;
+        }
+
+        th, td {
+            border: 1px solid #666;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #000;
+            color: #fff;
+        }
+
+        td a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <div class="left-buttons">
+                <a href="Installer Maker Docs.html">Página na Wiki</a>
+            </div>
+            <div class="right-buttons">
+                <button onclick="history.back()">Voltar</button>
+                <button onclick="window.location.href='../index.html'">Home</button>
+            </div>
+        </div>
+
+        <h1>Next Level Software Studio Calculator</h1>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Versão</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>NLSS Calculator</td>
+                    <td>1W</td>
+                    <td><a href="#">[Link não disponível]</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
