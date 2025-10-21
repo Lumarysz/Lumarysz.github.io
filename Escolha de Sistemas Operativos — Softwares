@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softwares – Next Level Software Studio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #222;
+      text-align: center;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .alert {
+      font-weight: bold;
+      background-color: yellow;
+      color: #000;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .top-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .top-buttons a {
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .top-buttons a:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    .software-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .software-list a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .software-list a:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .software-list a {
+        font-size: 14px;
+        padding: 12px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="alert">
+      ⚠️ Atenção: Este site está em fase de desenvolvimento ALPHA. Muitas funcionalidades ainda não funcionam. ⚠️
+    </div>
+
+    <div class="top-buttons">
+      <a href="index1.html">Voltar</a>
+      <a href="index.html">Home</a>
+    </div>
+
+    <h1>Softwares feitos pela Next Level Software Studio</h1>
+
+    <div class="software-list">
+      <a href="Calculator/Calculator.html">Softwares compatíveis com Android</a>
+      <a href="Calendar & Tasks/Calendar & Tasks.html">Softwares compatíveis com iOS</a>
+      <a href="NLSS CMD/NLSS CMD.html">Softwares compatíveis com macOS</a>
+      <a href="Device Acess History/Device Acess History.html">Softwares compatíveis com Windows</a>
+    </div>
+  </div>
+</body>
+</html>
